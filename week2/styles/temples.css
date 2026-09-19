@@ -1,0 +1,116 @@
+:root {
+    --primary-color: rgb(0, 3, 6);
+    --secondary-color: rgb(255, 217, 0);
+    --accent1-color: rgb(5, 0, 0);
+    --accent2-color: rgb(0, 9, 5);
+}
+
+body {
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+header span {
+    color: var(--secondary-color);
+    margin: 10px;
+    font-size: 40px;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hamburger {
+    background-color: var(--primary-color);
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 10px;
+    border: none;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    border-radius: 2px;
+}
+
+header nav a{
+    color: var(--secondary-color);
+    padding: 1rem;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: var(--accent1-color);
+}
+
+@media (max-width: 640px) {
+.hamburger {
+    display: flex;
+    width: auto;
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 220px;
+    background-color: var(--accent2-color);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+}
+
+h1{
+    text-align: center;
+}
+
+
+.album {
+    grid-template-columns: 1fr 1fr;
+}
+
+
+main div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+main img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+main div figcaption {
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
