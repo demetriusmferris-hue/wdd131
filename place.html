@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United States - Demetrious Ferris</title>
+    <meta name="author" content="Demetrious Ferris">
+    <meta name="description" content="A home page for the United States, including data and weather information.">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="box">
+        <h1>United States</h1>
+    </header>
+    <main class="layout-container">
+        <div class="box image">
+            <picture>
+                <source media="(max-width: 760px)" srcset="images/newyorkcountryside.jpg" alt="New York country side view">
+                <img src="images/washingtondc.jpg" alt="Scenic view of the United States">
+            </picture>
+        </div>
+        <section class="box data">
+            <h2>Data</h2>
+            <ul class="list">
+                <li><span class="label">Area:</span> <span class="value">3,796,742 mi²</span></li>
+                <li><span class="label">Population:</span> <span class="value">365 million</span></li>
+                <li><span class="label">Capital:</span> <span class="value">Washington, D.C.</span></li>
+                <li><span class="label">Languages:</span> <span class="value">English</span></li>
+                <li><span class="label">Time Zone:</span> <span class="value">UTC -5 to UTC -10</span></li>
+                <li><span class="label">Calling Code:</span> <span class="value">+1</span></li>
+                <li><span class="label">Internet TLD:</span> <span class="value">.us</span></li>
+            </ul>
+        </section>
+        <section class="box weather">
+            <h2>Weather</h2>
+            <div class="weather-icon"><img src="images/weather.svg" alt="Weather Icon"></div>
+            <ul class="kv-list">
+                <li><span class="label">Temperature:</span> <span class="value" id="temperature-value">62°F</span></li>
+                <li><span class="label">Conditions:</span> <span class="value">Sunny</span></li>
+                <li><span class="label">Wind:</span> <span class="value" id="wind-value">1 mph</span></li>
+                <li><span class="label">Wind chill:</span> <span class="value" id="wind-chill">Calculating…</span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Demetrious Ferris | Hawaii | United States</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
