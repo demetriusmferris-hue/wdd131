@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples - Demetrious Ferris</title>
+    <meta name="description" content="Page assignment to showcase our knowledge learnt in our Week 2 learning activities">
+    <meta name="author" content="Demetrious Ferris">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <span>Temple Album</span>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="filtered-temples.html" data-filter="home">Home</a></li>
+                <li><a href="filtered-temples.html" data-filter="old">Old</a></li>
+                <li><a href="filtered-temples.html" data-filter="new">New</a></li>
+                <li><a href="filtered-temples.html" data-filter="large">Large</a></li>
+                <li><a href="filtered-temples.html" data-filter="small">Small</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div class="album">
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Demetrious Ferris | Hawaii</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
