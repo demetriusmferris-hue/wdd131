@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wireframe layout for Brick & Beyond, a fan-made guide to LEGO history, builds, and Star Wars set comparisons.">
+  <meta name="author" content="Demetrious Ferris">
+  <title>Brick & Beyond | Wireframes</title>
+  <link rel="stylesheet" href="siteplan.css">
+  <script src="sytles/siteplan.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Brick and Beyond home">
+      <span class="brick-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span>Brick <span class="brand-amp">&</span> Beyond</span>
+    </a>
+    <p class="header-note">Wireframes</p>
+  </header>
+
+  <main id="top">
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">WDD 131 · UI mockups</p>
+      <h1 id="page-title">Home page<br>wireframes</h1>
+      <p class="intro-copy">These sketches map the Brick & Beyond homepage to a clear, approachable layout for desktop and mobile visitors.</p>
+    </section>
+
+    <div class="plan-content">
+      <section class="plan-section" aria-labelledby="wireframes-title">
+        <p class="section-number">01 / Layout exploration</p>
+        <h2 id="wireframes-title">A simple, fan-friendly homepage</h2>
+        <p>The home page keeps the structure easy to scan: a bold hero, quick history overview, featured build highlights, Star Wars comparisons, and a clear user-submission call to action. It uses the same color palette and brand styling as the project site plan so the experience feels cohesive across devices.</p>
+
+        <div class="wireframe-grid">
+          <figure class="wireframe-figure">
+            <figcaption>Mobile view</figcaption>
+            <div class="wireframe mobile-wireframe" role="img" aria-label="Mobile home page wireframe with a compact header, welcome hero, stacked history, builds, Star Wars comparison, creation-sharing sections, and footer">
+              <div class="wf-site-header">
+                <span class="wf-logo">BRICK & BEYOND</span>
+                <span class="wf-menu" aria-hidden="true">☰</span>
+              </div>
+              <div class="wf-mobile-hero">
+                <div class="wf-image">Welcome image</div>
+                <div class="wf-copy">
+                  <strong>Build. Explore. Discover.</strong>
+                  <span>Welcome to Brick & Beyond</span>
+                  <span class="wf-button">Explore the builds</span>
+                </div>
+              </div>
+              <div class="wf-mobile-section">
+                <strong>LEGO history</strong>
+                <span>Short introduction and a link to learn more</span>
+              </div>
+              <div class="wf-mobile-section">
+                <strong>Big builds</strong>
+                <div class="wf-image">Featured build image</div>
+                <span>Build name · piece count · details</span>
+              </div>
+              <div class="wf-mobile-section">
+                <strong>Star Wars sets</strong>
+                <div class="wf-image">Set and film vehicle</div>
+                <span>Compare the set with its inspiration</span>
+              </div>
+              <div class="wf-mobile-section wf-share">
+                <strong>Share your creation</strong>
+                <span>Photo and details upload link</span>
+                <span class="wf-button">Share a build</span>
+              </div>
+              <div class="wf-site-footer">Footer · About · Contact</div>
+            </div>
+          </figure>
+
+          <figure class="wireframe-figure">
+            <figcaption>Desktop view</figcaption>
+            <div class="wireframe desktop-wireframe" role="img" aria-label="Desktop home page wireframe with a full header, large hero section, three feature panels, and final submission area">
+              <div class="wf-site-header">
+                <span class="wf-logo">BRICK & BEYOND</span>
+                <span class="wf-nav">Home · History · Builds · Star Wars · Share</span>
+              </div>
+              <div class="wf-desktop-hero">
+                <div class="wf-image">Hero image</div>
+                <div class="wf-copy">
+                  <strong>Build. Explore. Discover.</strong>
+                  <span>Welcome to Brick & Beyond</span>
+                  <span class="wf-button">Explore the builds</span>
+                </div>
+              </div>
+              <div class="wf-desktop-section wf-history">
+                <strong>LEGO history</strong>
+                <span>Short overview and a link to learn more</span>
+              </div>
+              <div class="wf-desktop-section">
+                <strong>Featured build</strong>
+                <div class="wf-image">Build highlight image</div>
+                <span>Set title · pieces · story</span>
+              </div>
+              <div class="wf-desktop-section">
+                <strong>Star Wars compare</strong>
+                <div class="wf-image">Set + film inspiration</div>
+                <span>Vehicle comparison and details</span>
+              </div>
+              <div class="wf-desktop-section wf-share">
+                <strong>Share your creation</strong>
+                <span>Upload a photo and describe your build</span>
+                <span class="wf-button">Share a build</span>
+              </div>
+              <div class="wf-site-footer">Footer · About · Contact · FAQs</div>
+            </div>
+          </figure>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Demetrious Ferris | Hawaii | United States</p>
+    <p>© <span id="currentyear"></span> Brick & Beyond</p>
+  </footer>
+  <p id="lastModified" class="page-meta"></p>
+</body>
+</html>
