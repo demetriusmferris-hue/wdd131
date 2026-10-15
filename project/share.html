@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Share a photo and the story behind your LEGO creation with the Brick & Beyond browser-based community collection.">
+  <meta name="theme-color" content="#193b35">
+  <title>Share a Creation | Brick & Beyond</title>
+  <link rel="stylesheet" href="project.css">
+  <script src="project.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Brick & Beyond home"><span class="brand-mark" aria-hidden="true">B</span><span>Brick <span class="brand-amp">&</span> Beyond</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span class="visually-hidden">Open navigation menu</span><span aria-hidden="true">☰</span></button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a><a href="history.html">Our story</a><a href="builds.html">Big builds</a><a href="star-wars.html">Star Wars</a><a class="nav-cta" href="share.html" aria-current="page">Share a build</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="page-hero">
+      <div class="section-wrap page-hero-inner">
+        <p class="eyebrow">Every build has a story</p>
+        <h1>Put your creation<br><span>on display.</span></h1>
+        <p>Add a photo, a title, and a few details to your personal collection. Your entries stay in this browser; this student project does not upload them to a server.</p>
+      </div>
+    </section>
+    <section class="section-wrap share-layout content-section">
+      <div class="share-form-panel">
+        <p class="eyebrow">Builder submission</p>
+        <h2>Tell us about your build</h2>
+        <form id="creation-form">
+          <label for="creator-name">Your name
+            <input id="creator-name" name="creatorName" type="text" autocomplete="name" maxlength="50" required>
+          </label>
+          <label for="creation-title">Creation title
+            <input id="creation-title" name="title" type="text" maxlength="70" required>
+          </label>
+          <label for="creation-category">Build type
+            <select id="creation-category" name="category" required>
+              <option value="">Choose a category</option>
+              <option value="Original creation">Original creation</option>
+              <option value="Set modification">Set modification</option>
+              <option value="Display model">Display model</option>
+              <option value="Star Wars build">Star Wars build</option>
+            </select>
+          </label>
+          <label for="creation-story">The story behind it
+            <textarea id="creation-story" name="story" rows="5" maxlength="500" required></textarea>
+            <span class="field-hint">Up to 500 characters.</span>
+          </label>
+          <label for="creation-photo">Photo (optional)
+            <input id="creation-photo" name="photo" type="file" accept="image/jpeg,image/png,image/webp">
+            <span class="field-hint">JPEG, PNG, or WebP; up to 4 MB. The preview is temporary and is not saved.</span>
+          </label>
+          <figure class="upload-preview" id="upload-preview-wrap" hidden>
+            <img id="upload-preview" alt="Preview of your selected creation" loading="lazy" decoding="async">
+            <figcaption>Local preview only</figcaption>
+          </figure>
+          <label class="checkbox-label" for="creation-consent">
+            <input id="creation-consent" name="consent" type="checkbox" required>
+            <span>I understand this demo saves my text details in this browser only.</span>
+          </label>
+          <button class="button button-dark" type="submit">Add to my collection <span aria-hidden="true">→</span></button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <aside class="submission-info">
+        <p class="eyebrow">Your local collection</p>
+        <h2>Creations saved here</h2>
+        <p>Submitted details are stored in your browser’s local storage, not shared publicly. Clearing your browser data will remove them. Photos are previewed from your selected file but are never uploaded or stored.</p>
+        <div class="saved-creations" id="saved-creations" aria-live="polite"></div>
+        <button class="text-button" id="clear-creations" type="button">Clear my saved creations</button>
+      </aside>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="section-wrap footer-inner"><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">B</span><span>Brick <span class="brand-amp">&</span> Beyond</span></a><p>Independent fan project. Not affiliated with or endorsed by the LEGO Group or Lucasfilm.</p><p class="copyright">© <span data-current-year></span> Brick & Beyond · Demetrious Ferris · Hawaii</p><p class="footer-modified">Last modified: <time data-last-modified></time></p></div>
+  </footer>
+</body>
+</html>
